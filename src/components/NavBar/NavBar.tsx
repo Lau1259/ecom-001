@@ -1,4 +1,5 @@
 import logo from "../../assets/logo.jpg";
+import { NavContainer, NavListContainer, NavLogo } from "./styles";
 
 interface Props {
   //Describe Props
@@ -6,14 +7,14 @@ interface Props {
 
 const NavBar = ({}) => {
   return (
-    <div>
+    <NavContainer>
       <div>
-        <img src={logo} alt="test logo" />
+        <NavLogo src={logo} alt="test logo" />
       </div>
-      <nav>
+      <NavListContainer>
         <ul>
           <li>
-            <a href="#">Test</a>
+            <a href="#">Test #1</a>
           </li>
           <li>
             <a href="#">Test</a>
@@ -22,8 +23,8 @@ const NavBar = ({}) => {
             <a href="#">Test</a>
           </li>
         </ul>
-      </nav>
-    </div>
+      </NavListContainer>
+    </NavContainer>
   );
 };
 
