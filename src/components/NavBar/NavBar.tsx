@@ -1,4 +1,3 @@
-import styles from "./NavBar.module.scss";
 import logo from "../../assets/logo.jpg";
 
 interface Props {
@@ -7,11 +6,11 @@ interface Props {
 
 const NavBar = ({}) => {
   return (
-    <div className={`${styles["navbar"]}`}>
-      <div className={`${styles["icon"]}`}>
+    <div>
+      <div>
         <img src={logo} alt="test logo" />
       </div>
-      <nav className="nav-main">
+      <nav>
         <ul>
           <li>
             <a href="#">Test</a>
