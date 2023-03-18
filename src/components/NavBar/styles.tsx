@@ -8,7 +8,7 @@ const NavContainer = styled.div`
 `;
 
 const NavLogo = styled.img`
-  max-width: 100px;
+  max-width: 80px;
   border-radius: 100%;
 `;
 
