@@ -1,5 +1,6 @@
 import logo from "../../assets/logo.jpg";
 import { NavContainer, NavListContainer, NavLogo } from "./styles";
+import { Link } from "react-router-dom";
 
 interface Props {
   //Describe Props
@@ -9,18 +10,20 @@ const NavBar = ({}) => {
   return (
     <NavContainer>
       <div>
-        <NavLogo src={logo} alt="test logo" />
+        <Link to="/">
+          <NavLogo src={logo} alt="Logo" />
+        </Link>
       </div>
       <NavListContainer>
         <ul>
           <li>
-            <a href="#">Test #1</a>
+            <Link to="/test-1">Test #1</Link>
           </li>
           <li>
-            <a href="#">Test</a>
+            <Link to="/test-2">Test #2</Link>
           </li>
           <li>
-            <a href="#">Test</a>
+            <Link to="/test-3">Test #3</Link>
           </li>
         </ul>
       </NavListContainer>

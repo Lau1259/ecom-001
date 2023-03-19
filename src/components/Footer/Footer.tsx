@@ -34,7 +34,6 @@ const Footer = ({}) => {
         <FooterListTitle>Contact Us</FooterListTitle>
         <FooterSocialContainer>
           <FontAwesomeIcon size="lg" icon={["fab", "facebook-square"]} />
-
           <FontAwesomeIcon size="lg" icon={["fab", "youtube-square"]} />
           <FontAwesomeIcon size="lg" icon={["fab", "github-square"]} />
         </FooterSocialContainer>
