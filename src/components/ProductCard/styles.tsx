@@ -5,20 +5,16 @@ console.log(global["border-radius"]);
 
 const glow1 = keyframes`
 0% {
-  box-shadow: -2px -2px 15px ${themes.light["ac-01"]};
+  box-shadow: 0px 0px 5px ${themes.light["ac-01"]};
   }
-20% {
-  box-shadow: 2px -2px 15px ${themes.light["ac-01"]};
-  }
-
   30% {
-    box-shadow: 2px 2px 15px ${themes.light["ac-01"]};
+    box-shadow: 0px 0px 20px ${themes.light["ac-01"]};
   }
   60% {
-    box-shadow: -2px 2px 15px ${themes.light["ac-01"]};
+    box-shadow: 0px 0px 20px ${themes.light["ac-01"]};
   }
   100% {
-    box-shadow: -2px -2px 15px ${themes.light["ac-01"]};
+    box-shadow: 0px 0px 5px ${themes.light["ac-01"]};
   }
 `;
 
@@ -34,7 +30,7 @@ const ProductCardContainer = styled.div`
   }
   :hover {
     background: ${themes.light["ac-01"]};
-    animation: ${glow1} infinite 6s ease-in-out;
+    animation: ${glow1} infinite 2s ease-out;
     font-weight: bold;
     cursor: pointer;
     img {
