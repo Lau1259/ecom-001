@@ -1,5 +1,4 @@
-import { ProductCardContainer } from "./styles";
-import Logo from "../../assets/logo.png";
+import { ProductCardContainer, ProductInfo } from "./styles";
 
 interface Props {
   //Describe Props
@@ -11,9 +10,11 @@ interface Props {
 const ProductCard = ({ img, title, price }: Props) => {
   return (
     <ProductCardContainer>
-      <img src={Logo} alt="Test image" />
-      <p>{title.toLocaleUpperCase()}</p>
-      <p>${price}</p>
+      <img src={img} alt="Test image" />
+      <ProductInfo>
+        <p>{title.toLocaleUpperCase()}</p>
+        <p>${price}</p>
+      </ProductInfo>
     </ProductCardContainer>
   );
 };

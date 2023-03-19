@@ -18,25 +18,43 @@ const glow1 = keyframes`
   }
 `;
 
+const ProductInfo = styled.div`
+  position: relative;
+  width: 100%;
+  display: none;
+  bottom: -100%;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+`;
+
 const ProductCardContainer = styled.div`
   display: grid;
   border-radius: ${global["border-radius"]};
   overflow: hidden;
-  background: rgba(250, 250, 250, 0.35);
+  background: ${themes.bw[100]};
   max-width: 300px;
+  height: 375px;
   transition: 0.35;
+  position: relative;
   img {
     width: 100%;
+    margin: auto auto;
   }
-  :hover {
-    background: ${themes.light["ac-01"]};
+  :hover,
+  :focus {
+    background: ${themes.bw[300]};
     animation: ${glow1} infinite 2s ease-out;
     font-weight: bold;
     cursor: pointer;
-    img {
-      background: ${themes.light.light};
+    ${ProductInfo} {
+      display: grid;
+      place-items: center;
+      bottom: 0;
+      background: ${themes.light["ac-01"]};
     }
   }
 `;
 
-export { ProductCardContainer };
+export { ProductCardContainer, ProductInfo };
