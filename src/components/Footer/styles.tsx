@@ -16,29 +16,28 @@ const FooterLogo = styled.img`
 `;
 
 const FooterList = styled.ul`
-    padding: 0;
-    list-style-type: none;
-    align-items: center;
-    li {
-      min-width: 10ch;
-    }
-    a {
-      color: white;
-    }
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+  li {
+    min-width: 10ch;
+  }
+  a {
+    color: white;
   }
 `;
 
 const FooterListTitle = styled.li`
   border-bottom: white solid 2px;
-  margin-bottom: .5rem;
-}`;
+  margin-bottom: 0.5rem;
+`;
 
 const FooterSocialContainer = styled.li`
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: space-evenly;
-}`;
+`;
 
 export {
   FooterContainer,

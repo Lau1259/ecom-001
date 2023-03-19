@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { themes } from "../../styles/vars";
 
 const NavContainer = styled.div`
   display: grid;
@@ -10,6 +11,7 @@ const NavContainer = styled.div`
 const NavLogo = styled.img`
   max-width: 80px;
   border-radius: 100%;
+  background: white;
 `;
 
 const NavListContainer = styled.nav`

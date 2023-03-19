@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo.png";
 import { NavContainer, NavListContainer, NavLogo } from "./styles";
 import { Link } from "react-router-dom";
 

@@ -5,7 +5,7 @@ import {
   FooterLogo,
   FooterSocialContainer,
 } from "./styles";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo.png";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
