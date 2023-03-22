@@ -3,7 +3,12 @@ import { Main } from "../../styles/global";
 
 interface Props {
   //Describe Props
-  categories: { img: string; description: string; title: string; id: string }[];
+  categories: {
+    img: string;
+    description: string;
+    title: string;
+    id: number;
+  }[];
 }
 
 const Home = ({ categories }: Props) => {

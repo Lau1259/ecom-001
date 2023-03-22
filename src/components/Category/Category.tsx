@@ -7,13 +7,13 @@ interface Props {
   img: string;
   description: string;
   title: string;
-  id: string;
+  id: number;
   isEven: boolean;
 }
 
 const Category = ({ img = Logo, description, title, id, isEven }: Props) => {
   return (
-    <CategoryContainer bg={Logo} className={`${isEven ? "left" : "right"}`}>
+    <CategoryContainer bg={img} className={`${isEven ? "left" : "right"}`}>
       <div className="img"> </div>
       <div className="info">
         <p className="title">{title}</p>

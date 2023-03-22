@@ -11,25 +11,38 @@ const ShopRoutes = (
         <Home
           categories={[
             {
-              img: Logo,
+              id: 1,
+              title: "T-shirts",
               description:
-                "Shoes are the ultimate addition to your look. Without stealing the show, this pair can give you the presence you need.",
-              id: "shoes",
-              title: "Shoes",
+                "Casual and comfortable shirts made from soft fabric.",
+              img: "https://source.unsplash.com/featured/?t-shirts",
             },
             {
-              img: Logo,
-              description:
-                "From comfort to warmth, what you wear in bed is essential for improving your quality of sleep. ",
-              id: "Sleepwear",
-              title: "Sleepwear",
+              id: 2,
+              title: "Jeans",
+              description: "Versatile and durable pants made from denim.",
+              img: "https://source.unsplash.com/featured/?jeans",
             },
             {
-              img: Logo,
+              id: 3,
+              title: "Dresses",
               description:
-                "From comfort to warmth, what you wear in bed is essential for improving your quality of sleep. ",
-              id: "Sleepwear",
-              title: "Sleepwear",
+                "Stylish and comfortable dresses made from high-quality fabric.",
+              img: "https://source.unsplash.com/featured/?dresses",
+            },
+            {
+              id: 4,
+              title: "Jackets",
+              description:
+                "Warm and fashionable outerwear made from high-quality materials.",
+              img: "https://source.unsplash.com/featured/?jackets",
+            },
+            {
+              id: 5,
+              title: "Sweaters",
+              description:
+                "Cozy and comfortable knitwear made from soft wool or synthetic fibers.",
+              img: "https://source.unsplash.com/featured/?sweaters",
             },
           ]}
         />
