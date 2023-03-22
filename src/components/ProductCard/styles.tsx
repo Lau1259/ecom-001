@@ -1,8 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { global, themes } from "../../styles/vars";
 
-console.log(global["border-radius"]);
-
 const glow1 = keyframes`
 0% {
   box-shadow: 0px 0px 5px ${themes.light["ac-01"]};

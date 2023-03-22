@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { themes } from "../../styles/vars";
+import { themes, typography } from "../../styles/vars";
 
 const NavContainer = styled.div`
   display: grid;
@@ -27,7 +27,13 @@ const NavListContainer = styled.nav`
       min-width: 10ch;
     }
     a {
-      color: white;
+      color: ${themes.light["light"]};
+      font-size: 1.25rem;
+      font-weight: ${typography.weights.regular};
+      &.active {
+        color: ${themes.light["col-1"]};
+        font-weight: ${typography.weights.bold};
+      }
     }
   }
 `;

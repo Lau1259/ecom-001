@@ -13,6 +13,7 @@ import {
   faYoutubeSquare,
   faGithubSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 library.add(faFacebookSquare, faGithubSquare, faYoutubeSquare);
 
@@ -29,7 +30,9 @@ const Footer = ({}) => {
         <li>Test Info</li>
         <li>Test Info</li>
       </FooterList>
-      <FooterLogo src={logo} />
+      <Link to={"/"}>
+        <FooterLogo src={logo} />
+      </Link>
       <FooterList>
         <FooterListTitle>Contact Us</FooterListTitle>
         <FooterSocialContainer>

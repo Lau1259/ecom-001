@@ -3,33 +3,32 @@ import ReactDOM from "react-dom/client";
 import Layout from "./Layout";
 import "./index.css";
 
-// ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-// )
-
 import { createHashRouter, RouterProvider } from "react-router-dom";
+import ROUTES from "./routes/routes";
 import Test1 from "./pages/Tests/Test1";
 import Test3 from "./pages/Tests/Test3";
 import Test2 from "./pages/Tests/Test2";
-
+import ShopLayout from "./pages/Shop/Layout";
 const router = createHashRouter([
   {
-    path: "/",
+    path: ROUTES.INDEX,
     element: <Layout />,
     children: [
       {
-        path: "test-1",
+        path: ROUTES.TEST1,
         element: <Test1 />,
       },
       {
-        path: "test-2",
+        path: ROUTES.TEST2,
         element: <Test2 />,
       },
       {
-        path: "test-3",
+        path: ROUTES.TEST3,
         element: <Test3 />,
+      },
+      {
+        path: ROUTES.SHOP,
+        element: <ShopLayout />,
       },
     ],
   },

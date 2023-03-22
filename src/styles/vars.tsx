@@ -30,4 +30,21 @@ const global = {
   "shadow-light": `0px 0px 15px ${themes.bw[100]};`,
 };
 
-export { themes, global };
+const sizes = {
+  S: "500px",
+  M: "720px",
+  L: "1080px",
+};
+
+const typography = {
+  fonts: { title: `'Koulen', cursive`, body: `'Poppins', sans-serif` },
+  weights: {
+    extraLight: 100,
+    light: 300,
+    regular: 400,
+    bold: 600,
+    extraBold: 800,
+  },
+};
+
+export { themes, global, sizes, typography };

@@ -13,7 +13,12 @@ const ProductCard = ({ img, title, price }: Props) => {
       <img src={img} alt="Test image" />
       <ProductInfo>
         <p>{title.toLocaleUpperCase()}</p>
-        <p>${price}</p>
+        <p>
+          {Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD",
+          }).format(price)}
+        </p>
       </ProductInfo>
     </ProductCardContainer>
   );
